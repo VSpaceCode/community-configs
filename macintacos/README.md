@@ -10,7 +10,6 @@ There are two files that make up my configuration for ease of iteration:
 The actual overrides are in `vspacecode-config.json`, however there is some additional settings/extensions needed to get every command to behave the way I expect which are defined in `other-config.json`.
 
 - I use [VSCodeVim](https://github.com/VSCodeVim/Vim). `vim.visualModeKeyBindingsNonRecursive` and `vim.normalModeKeyBindingsNonRecursive` have the `vspacecode.space` invocation set to `<space>`. 90% of the time this isn't a problem – for the other 10%, vote for: https://github.com/microsoft/vscode/issues/103845.
-- I use [multi-command](https://github.com/ryuta46/vscode-multi-command). There is an array of `multiCommand.commands` that are used later on in the overrides.
 - I use [Settings Cycler](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-settings-cycler) for cycling through line number types; there's probably an easier solution for this but I haven't found it.
 - There's some minor configuration for `whichkey` (I added a delay because if I know the chord I don't need the menu to render really).
 
@@ -26,7 +25,6 @@ Copy/paste at your own risk.
 Here are the extensions you would need in order to make sure that everything works:
 
 - [VSCodeVim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command)
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [File Utils](https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils)
 - [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
