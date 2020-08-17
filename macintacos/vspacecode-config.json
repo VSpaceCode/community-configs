@@ -222,7 +222,10 @@
           "type": "command"
         },
         {
-          "command": "multiCommand.copyAndCommentLines",
+          "commands": [
+            "editor.action.clipboardCopyAction",
+            "editor.action.commentLine"
+          ],
           "key": "y",
           "name": "Copy selection and comment line",
           "type": "command"
@@ -460,7 +463,10 @@
     {
       "bindings": [
         {
-          "command": "multiCommand.copyRelativePathAndPrintIt",
+          "commands": [
+            "copy-relative-path-and-line-numbers.path-only",
+            "execPaste"
+          ],
           "key": "r",
           "name": "...relative path of current file (copies it too)",
           "type": "command"
@@ -472,7 +478,7 @@
           "type": "command"
         },
         {
-          "command": "multiCommand.copyRelativePathAndSelectedLinesAndPrintIt",
+          "commands": ["copy-relative-path-and-line-numbers.both", "execPaste"],
           "key": "l",
           "name": "...relative path of current file AND selected line numbers (copies it too)",
           "type": "command"
@@ -818,25 +824,37 @@
     {
       "bindings": [
         {
-          "command": "multiCommand.splitWindowRightAndSearchForFile",
+          "commands": [
+            "workbench.action.splitEditorRight",
+            "workbench.action.quickOpen"
+          ],
           "key": "l",
           "name": "...to the right",
-          "type": "command"
+          "type": "commands"
         },
         {
-          "command": "multiCommand.splitWindowLeftAndSearchForFile",
+          "commands": [
+            "workbench.action.splitEditorLeft",
+            "workbench.action.quickOpen"
+          ],
           "key": "h",
           "name": "...to the left",
           "type": "command"
         },
         {
-          "command": "multiCommand.splitWindowBelowAndSearchForFile",
+          "commands": [
+            "workbench.action.splitEditorDown",
+            "workbench.action.quickOpen"
+          ],
           "key": "j",
           "name": "...to below",
           "type": "command"
         },
         {
-          "command": "multiCommand.splitWindowAboveAndSearchForFile",
+          "commands": [
+            "workbench.action.splitEditorUp",
+            "workbench.action.quickOpen"
+          ],
           "key": "k",
           "name": "...to above",
           "type": "command"
@@ -847,7 +865,11 @@
       "type": "bindings"
     },
     {
-      "command": "multiCommand.closePanelAndSidebarAndOtherEditors",
+      "commands": [
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar",
+        "workbench.action.closeEditorsInOtherGroups"
+      ],
       "keys": "w.M",
       "name": "Close sidebar, panel, and other editor groups",
       "type": "command"
