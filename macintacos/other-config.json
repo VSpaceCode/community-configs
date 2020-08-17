@@ -1,0 +1,85 @@
+{
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.splitWindowRightAndSearchForFile",
+      "sequence": [
+        "workbench.action.splitEditorRight",
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "command": "multiCommand.splitWindowLeftAndSearchForFile",
+      "sequence": [
+        "workbench.action.splitEditorLeft",
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "command": "multiCommand.splitWindowBelowAndSearchForFile",
+      "sequence": [
+        "workbench.action.splitEditorDown",
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "command": "multiCommand.splitWindowAboveAndSearchForFile",
+      "sequence": [
+        "workbench.action.splitEditorUp",
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "command": "multiCommand.closePanelAndSidebarAndOtherEditors",
+      "sequence": [
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar",
+        "workbench.action.closeEditorsInOtherGroups"
+      ]
+    },
+    {
+      "command": "multiCommand.copyAndCommentLines",
+      "sequence": [
+        "editor.action.clipboardCopyAction",
+        "editor.action.commentLine"
+      ]
+    },
+    {
+      "command": "multiCommand.copyRelativePathAndPrintIt",
+      "sequence": ["copy-relative-path-and-line-numbers.path-only", "execPaste"]
+    },
+    {
+      "command": "multiCommand.copyRelativePathAndSelectedLinesAndPrintIt",
+      "sequence": ["copy-relative-path-and-line-numbers.both", "execPaste"]
+    }
+  ],
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "off"
+        },
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "relative"
+        }
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+  "whichkey.delay": 200,
+  "whichkey.sortOrder": "nonNumberFirst"
+}
