@@ -839,7 +839,7 @@
           ],
           "key": "h",
           "name": "...to the left",
-          "type": "command"
+          "type": "commands"
         },
         {
           "commands": [
@@ -848,7 +848,7 @@
           ],
           "key": "j",
           "name": "...to below",
-          "type": "command"
+          "type": "commands"
         },
         {
           "commands": [
@@ -857,7 +857,7 @@
           ],
           "key": "k",
           "name": "...to above",
-          "type": "command"
+          "type": "commands"
         }
       ],
       "keys": ["w", "f"],
