@@ -248,37 +248,6 @@
       "type": "command"
     },
     {
-      "bindings": [
-        {
-          "command": "copyFilePath",
-          "key": "y",
-          "name": "...current file with absolute path",
-          "type": "command"
-        },
-        {
-          "command": "copy-relative-path-and-line-numbers.path-only",
-          "key": "r",
-          "name": "...current file with relative path",
-          "type": "command"
-        },
-        {
-          "command": "copy-relative-path-and-line-numbers.both",
-          "key": "R",
-          "name": "...current file with relative path and current line numbers",
-          "type": "command"
-        },
-        {
-          "command": "fileutils.copyFileName",
-          "key": "n",
-          "name": "...current file name with extension",
-          "type": "command"
-        }
-      ],
-      "keys": ["f", "y"],
-      "name": "Copy...",
-      "type": "bindings"
-    },
-    {
       "command": "outline.focus",
       "keys": "f.O",
       "name": "Focus file outline view",
