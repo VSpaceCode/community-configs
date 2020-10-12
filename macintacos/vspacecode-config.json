@@ -780,8 +780,8 @@
               "type": "command"
             }
           ],
-          "key": "A",
-          "name": "Add/remove...",
+          "key": "i",
+          "name": "Insert/remove...",
           "type": "bindings"
         },
         {
