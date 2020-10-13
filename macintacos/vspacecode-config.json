@@ -830,6 +830,12 @@
               "type": "command"
             },
             {
+              "command": "editor.action.revealDefinition",
+              "key": "g",
+              "name": "Go to definition",
+              "type": "command"
+            },
+            {
               "command": "editor.action.peekDefinition",
               "key": "D",
               "name": "Peek definition",
