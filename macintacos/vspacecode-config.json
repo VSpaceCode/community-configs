@@ -431,9 +431,9 @@
       "position": -1
     },
     {
-      "command": "vscsm.blameInSublimeMerge",
+      "command": "gitlens.toggleFileBlame",
       "keys": "g.b",
-      "name": "Show blame in Sublime Merge",
+      "name": "Show blame for current file",
       "type": "command"
     },
     {
@@ -897,15 +897,12 @@
         {
           "bindings": [
             {
-              "command": "go.godoctor.extract",
-              "key": "f",
-              "name": "Extract to function",
-              "type": "command"
-            },
-            {
-              "command": "go.godoctor.var",
-              "key": "v",
-              "name": "Extract to variable",
+              "args": {
+                "kind": "refactor.extract"
+              },
+              "command": "editor.action.codeAction",
+              "key": "e",
+              "name": "Extract to function or variable",
               "type": "command"
             },
             {
@@ -1286,57 +1283,6 @@
       ],
       "keys": ["x", "d"],
       "name": "Delete...",
-      "type": "bindings"
-    },
-    {
-      "bindings": [
-        {
-          "command": "editor.action.refactor",
-          "key": "r",
-          "name": "Refactor base command",
-          "type": "command"
-        },
-        {
-          "bindings": [
-            {
-              "command": "go.godoctor.extract",
-              "key": "m",
-              "name": "Extract method",
-              "type": "command"
-            },
-            {
-              "command": "go.godoctor.var",
-              "key": "v",
-              "name": "Extract variable",
-              "type": "command"
-            }
-          ],
-          "key": "g",
-          "name": "Golang...",
-          "type": "bindings"
-        },
-        {
-          "bindings": [
-            {
-              "command": "python.refactorExtractMethod",
-              "key": "m",
-              "name": "Extract method",
-              "type": "command"
-            },
-            {
-              "command": "python.refactorExtractVariable",
-              "key": "v",
-              "name": "Extract variable",
-              "type": "command"
-            }
-          ],
-          "key": "p",
-          "name": "Python...",
-          "type": "bindings"
-        }
-      ],
-      "keys": ["x", "r"],
-      "name": "Refactor...",
       "type": "bindings"
     },
     {
